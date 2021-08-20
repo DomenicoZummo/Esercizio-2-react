@@ -22,3 +22,37 @@
   background: #fad0ec;
   border-color: #8b005d;
 }
+
+.not-valid {
+  border-color: red;
+  animation: not-valid 0.6s forwards;
+}
+
+@keyframes not-valid {
+  0% {
+    transform: translateX(-10px);
+    border-color: red;
+    color: red;
+    transition: all 0.3s;
+  }
+  25% {
+    transform: translateX(10px);
+    border-color: red;
+    color: red;
+  }
+  50% {
+    transform: translateX(-10px);
+    border-color: red;
+    color: red;
+  }
+  75% {
+    transform: translateX(10px);
+    border-color: red;
+    color: red;
+  }
+  100% {
+    transform: translateX(0px);
+    border-color: red;
+    color: red;
+  }
+}
